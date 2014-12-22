@@ -22,9 +22,10 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         assertNotNull("editText is null", editText);
     }
 
-    public void testEditTextPlaceholder() {
+    public void testEditTextHint() {
         final String expected = mainActivity.getString(R.string.edit_message);
         final String actual = editText.getHint().toString();
         assertEquals(expected, actual);
     }
+
 }
